@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 def create_app():
     app = Flask(__name__)
-    client = MongoClient("mongodb+srv://murad:1987%40MFmf@microblog-app.kdea5.mongodb.net/test?ssl=true") # If you have special characters in your password, you must encode those characters if using your password in a connection string URI.
+    client = MongoClient("mongodb+srv://murad:1987%40MFmf@microblog-app.kdea5.mongodb.net/test") # If you have special characters in your password, you must encode those characters if using your password in a connection string URI.
     app.db = client.microblog
     # entries = []
 
